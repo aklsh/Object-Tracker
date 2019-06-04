@@ -16,7 +16,7 @@ while(True):
     mask = cv2.inRange(hsvframe, lower, upper)
     openingmask = cv2.morphologyEx(mask,cv2.MORPH_OPEN,kernel)
 
-    im2,cnts,hierarchy = cv2.findContours(openingmask.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
+    cnts, hierarchy = cv2.findContours(openingmask.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
    
     C_max = max(cnts,key=cv2.contourArea)
     
