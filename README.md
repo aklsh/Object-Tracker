@@ -18,6 +18,7 @@ Install them in one go by `pip install -r requirements.txt`
 
 The following colors are supported:
   * green
+  * red
 
 ##### To-do
 ---
